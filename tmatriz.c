@@ -15,5 +15,16 @@ int main(int argc, char const *argv[])
             matri[i][j] = 0;
         }
     }
+    for (int i = 0; i < filas; i++)
+    {
+        for (int j = 0; j < columnas; j++)
+        {
+            if (i == j)
+            {
+                matri[i][j] = 1;
+            }
+        }
+    }
+
     return 0;
 }
